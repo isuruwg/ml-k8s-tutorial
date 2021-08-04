@@ -6,6 +6,8 @@
   - [2.1. Installing for local development](#21-installing-for-local-development)
     - [2.1.1. Install Kubectl](#211-install-kubectl)
     - [2.1.2. Install KIND](#212-install-kind)
+    - [2.1.3. Useful Kubectl and KIND commands](#213-useful-kubectl-and-kind-commands)
+- [3. Getting a simple container running on a local Kubernetes Cluster](#3-getting-a-simple-container-running-on-a-local-kubernetes-cluster)
 
 # 1. Introduction
 
@@ -26,6 +28,10 @@ The course provides xml files for draw.io drawings. Open them in draw.io and do,
 ![image](images/diagrams-09%20-%20dev.png)
 
 ![image](images/diagrams-08%20-%20arch.png)
+
+Docker Compose vs Kubernetes:
+
+![image](images/diagrams-03%20-%20compose%20kubernetes.png)
 
 ## 2.1. Installing for local development
 
@@ -60,4 +66,20 @@ kind create cluster
 
 If you want to delete a cluster use `kind delete cluster` command.
 
+### 2.1.3. Useful Kubectl and KIND commands
+
+```bash
+# Specify name for new cluster
+kind create cluster --name NAME
+
+# Get clusters
+kind get clusters
+
+# Interact with a specific cluster with kubectl
+kubectl cluster-info --context kind-CLUSTER_NAME
+# Example: 
+kubectl cluster-info --context kind-kind
+```
+
+# 3. Getting a simple container running on a local Kubernetes Cluster
 
