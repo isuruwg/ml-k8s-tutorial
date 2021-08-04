@@ -83,3 +83,9 @@ kubectl cluster-info --context kind-kind
 
 # 3. Getting a simple container running on a local Kubernetes Cluster
 
+```bash
+mkdir simplek8s
+cd simplek8s
+```
+
+create [simplek8s/client-pod.yaml](simplek8s/client-pod.yaml).
