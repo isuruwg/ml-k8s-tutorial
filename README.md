@@ -11,7 +11,22 @@
 
 # 1. Introduction
 
-This repo contains my notes for the course [Docker and Kubernetes: The complete guide](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide)
+NEXT UP: 
+
+http://www.pattersonconsultingtn.com/blog/deploying_huggingface_with_kfserving.html
+
+What's the difference between kfserving and Kale? 
+
+
+This repo contains the following: 
+
+- My notes for the course [Docker and Kubernetes: The complete guide](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide)
+- Instructions for setting up a simple ML model server
+  - Using Fast API
+  - Using Seldon Core
+- Instructions for deploying the ML model server in gcp using App Engine or Cloud Run
+- Instructions for creating a simple front end for the ML model
+- Instructions for deploying the ML model and front end with Kubernetes
 
 ## 1.1. Generating the images
 
